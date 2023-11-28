@@ -8,7 +8,7 @@ import {
   CharacterName,
   DetailsContainer,
   PageContainer,
-} from './style';
+} from '@/styles/style';
 import { Gender } from '@/components/Pagination/style';
 import RootLayout from '@/app/layout';
 
