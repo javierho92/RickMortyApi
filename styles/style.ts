@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// STYLOS PARA LA PAGINA CHARACTERDETAILS
 export const PageContainer = styled.div`
   height: 100vh;
   display: flex;
@@ -26,6 +27,12 @@ export const DetailsContainer = styled.div`
   border-color: #a7cb54;
   padding: 30px;
   border-radius: 30px;
+  @media screen and (max-width: 400px) {
+    max-width: 200px;
+  }
+  @media screen and (max-width: 660px) {
+    max-width: 400px;
+  }
 `;
 export const DetailsContainer2 = styled.div`
   display: flex;

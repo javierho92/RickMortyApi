@@ -13,6 +13,9 @@ import {
   Specie,
 } from '@/styles/style';
 import RootLayout from '@/app/layout';
+import { Button } from 'react-bootstrap';
+import Link from 'next/link';
+import { RiHomeLine } from "react-icons/ri";
 
 interface CharacterDetailsProps {
   character: CharacterInterface;
@@ -41,6 +44,13 @@ const CharacterDetails: FC<CharacterDetailsProps> = () => {
     case false:
       return (
         <RootLayout>
+          <Link
+            href={`/main`}
+            style={{ textDecoration: 'none' }}
+          >
+
+          <Button style={{padding:'4px 16px 8px 16px', backgroundColor:'#A7CB54', border:'none', color:'black', margin:'30px', position:'absolute'}} ><RiHomeLine /></Button>
+          </Link>
           <PageContainer>
             <DetailsContainer>
               <CharacterImage src={character!.image} alt="alternativo" />
