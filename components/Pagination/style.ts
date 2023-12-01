@@ -10,6 +10,3 @@ export const PageNumber = styled.p`
   margin: 0px;
   color: #a7cb54;
 `;
-export const Gender = styled.h6`
-  color: white;
-`;

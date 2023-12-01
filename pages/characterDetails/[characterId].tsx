@@ -6,10 +6,12 @@ import { CharacterInterface } from '@/app/interface';
 import {
   CharacterImage,
   CharacterName,
+  Detail,
   DetailsContainer,
+  DetailsContainer2,
   PageContainer,
+  Specie,
 } from '@/styles/style';
-import { Gender } from '@/components/Pagination/style';
 import RootLayout from '@/app/layout';
 
 interface CharacterDetailsProps {
@@ -43,7 +45,15 @@ const CharacterDetails: FC<CharacterDetailsProps> = () => {
             <DetailsContainer>
               <CharacterImage src={character!.image} alt="alternativo" />
               <CharacterName>{character!.name}</CharacterName>
-              <Gender>Gender: {character?.gender}</Gender>
+              <Specie>{character?.species}</Specie>
+              <DetailsContainer2>
+                <Detail>Gender: {character?.gender}</Detail>
+                <Detail>Status: {character?.status} </Detail>
+                <Detail>Origin: {character?.origin.name} </Detail>
+                <Detail>Location: {character?.location.name} </Detail>
+                <Detail>Episodes: {character?.episode.length} </Detail>
+                <Detail>Created: {character?.created} </Detail>
+              </DetailsContainer2>
             </DetailsContainer>
           </PageContainer>
         </RootLayout>
