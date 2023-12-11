@@ -7,6 +7,7 @@ export const PageContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0px 0px 50px 0px;
 `;
 export const CharacterImage = styled.img`
   width: 100%;
